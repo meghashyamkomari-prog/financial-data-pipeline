@@ -1,0 +1,156 @@
+[0m23:10:28.956474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7548a27070e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7548a4546350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7548a0e579d0>]}
+
+
+============================== 23:10:28.962510 | c6172c7b-436a-4610-8702-c583a6a45f7e ==============================
+[0m23:10:28.962510 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m23:10:28.964476 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'write_json': 'True', 'use_colors': 'True', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'empty': 'None', 'no_print': 'None', 'introspect': 'True', 'invocation_command': 'dbt init financial_dbt', 'indirect_selection': 'eager', 'debug': 'False', 'profiles_dir': '/home/megha/.dbt', 'cache_selected_only': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'printer_width': '80', 'log_path': 'logs', 'warn_error': 'None'}
+[0m23:10:28.981196 [info ] [MainThread]: Creating dbt configuration folder at /home/megha/.dbt
+[0m23:10:28.985096 [debug] [MainThread]: Starter project path: /home/megha/airflow_env/lib/python3.14/site-packages/dbt/include/starter_project
+[0m23:10:29.525350 [info ] [MainThread]: Setting up your profile.
+[0m23:12:40.913979 [info ] [MainThread]: Profile financial_dbt written to /home/megha/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m23:12:40.920089 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m23:12:40.924484 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m23:12:40.927429 [info ] [MainThread]: python version: 3.14.4
+[0m23:12:40.929185 [info ] [MainThread]: python path: /home/megha/airflow_env/bin/python3
+[0m23:12:40.931756 [info ] [MainThread]: os info: Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m23:12:40.995522 [info ] [MainThread]: Using profiles dir at /home/megha/.dbt
+[0m23:12:40.997522 [info ] [MainThread]: Using profiles.yml file at /home/megha/.dbt/profiles.yml
+[0m23:12:40.999198 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/megha/financial-data-pipeline/dbt/financial_dbt/dbt_project.yml
+[0m23:12:41.001665 [info ] [MainThread]: adapter type: postgres
+[0m23:12:41.003491 [info ] [MainThread]: adapter version: 1.10.1
+[0m23:12:41.113426 [info ] [MainThread]: Configuration:
+[0m23:12:41.115788 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:12:41.117476 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:12:41.119062 [info ] [MainThread]: Required dependencies:
+[0m23:12:41.120322 [debug] [MainThread]: Executing "git --help"
+[0m23:12:41.130161 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:12:41.132261 [debug] [MainThread]: STDERR: "b''"
+[0m23:12:41.134060 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:12:41.135489 [info ] [MainThread]: Connection:
+[0m23:12:41.137504 [info ] [MainThread]:   host: localhost
+[0m23:12:41.139849 [info ] [MainThread]:   port: 5432
+[0m23:12:41.141405 [info ] [MainThread]:   user: postgres
+[0m23:12:41.143199 [info ] [MainThread]:   database: financial_db
+[0m23:12:41.144946 [info ] [MainThread]:   schema: public
+[0m23:12:41.146508 [info ] [MainThread]:   connect_timeout: 10
+[0m23:12:41.147983 [info ] [MainThread]:   role: None
+[0m23:12:41.149985 [info ] [MainThread]:   search_path: None
+[0m23:12:41.151467 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:12:41.153449 [info ] [MainThread]:   sslmode: None
+[0m23:12:41.155921 [info ] [MainThread]:   sslcert: None
+[0m23:12:41.157756 [info ] [MainThread]:   sslkey: None
+[0m23:12:41.159448 [info ] [MainThread]:   sslrootcert: None
+[0m23:12:41.161063 [info ] [MainThread]:   application_name: dbt
+[0m23:12:41.162556 [info ] [MainThread]:   retries: 1
+[0m23:12:41.164994 [info ] [MainThread]: Registered adapter: postgres=1.10.1
+[0m23:12:41.207298 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:12:41.248649 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:12:41.250882 [debug] [MainThread]: On debug: select 1 as id
+[0m23:12:41.252735 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:12:41.273542 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m23:12:41.288317 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m23:12:41.290038 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m23:12:41.292177 [debug] [MainThread]: On debug: No close available on handle
+[0m23:12:41.294581 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:12:41.296388 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:12:41.298066 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:12:41.299864 [info ] [MainThread]: Your new dbt project "financial_dbt" was created!
+Initialized new project in /mnt/c/Users/megha/financial-data-pipeline/dbt/financial_dbt/financial_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:12:41.302302 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m23:12:41.305976 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 132.42722, "process_in_blocks": "63855", "process_kernel_time": 0.163499, "process_mem_max_rss": "140520", "process_out_blocks": "8", "process_user_time": 1.288056}
+[0m23:12:41.308849 [debug] [MainThread]: Command `dbt init` succeeded at 23:12:41.308647 after 132.43 seconds
+[0m23:12:41.311143 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:12:41.313228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7548a0ec4640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7548a03cf650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7548a03b8c00>]}
+[0m23:12:41.315467 [debug] [MainThread]: Flushing usage events
+[0m23:12:41.749694 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:15:35.856138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bef8a3fb0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bef8c296350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bef88b4b9d0>]}
+
+
+============================== 23:15:35.863743 | 4debcc4a-54da-460b-82aa-e48928ac1832 ==============================
+[0m23:15:35.863743 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m23:15:35.866138 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'write_json': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'target_path': 'None', 'partial_parse': 'True', 'debug': 'False', 'introspect': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'warn_error': 'None', 'log_path': 'logs', 'indirect_selection': 'eager', 'printer_width': '80', 'log_cache_events': 'False', 'version_check': 'True', 'fail_fast': 'False', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/megha/.dbt'}
+[0m23:15:35.886452 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m23:15:35.888076 [info ] [MainThread]: python version: 3.14.4
+[0m23:15:35.889726 [info ] [MainThread]: python path: /home/megha/airflow_env/bin/python3
+[0m23:15:35.891781 [info ] [MainThread]: os info: Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m23:15:35.979962 [info ] [MainThread]: Using profiles dir at /home/megha/.dbt
+[0m23:15:35.981898 [info ] [MainThread]: Using profiles.yml file at /home/megha/.dbt/profiles.yml
+[0m23:15:35.983674 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/megha/financial-data-pipeline/dbt/dbt_project.yml
+[0m23:15:35.985808 [info ] [MainThread]: adapter type: postgres
+[0m23:15:35.987186 [info ] [MainThread]: adapter version: 1.10.1
+[0m23:15:35.989809 [info ] [MainThread]: Configuration:
+[0m23:15:35.991905 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:15:35.993347 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:15:35.995305 [info ] [MainThread]: Required dependencies:
+[0m23:15:35.997057 [debug] [MainThread]: Executing "git --help"
+[0m23:15:36.008140 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:15:36.010069 [debug] [MainThread]: STDERR: "b''"
+[0m23:15:36.011698 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:15:36.013521 [info ] [MainThread]: Connection:
+[0m23:15:36.015815 [info ] [MainThread]:   host: localhost
+[0m23:15:36.018967 [info ] [MainThread]:   port: 5432
+[0m23:15:36.022936 [info ] [MainThread]:   user: postgres
+[0m23:15:36.026053 [info ] [MainThread]:   database: financial_db
+[0m23:15:36.028340 [info ] [MainThread]:   schema: public
+[0m23:15:36.029749 [info ] [MainThread]:   connect_timeout: 10
+[0m23:15:36.031744 [info ] [MainThread]:   role: None
+[0m23:15:36.034557 [info ] [MainThread]:   search_path: None
+[0m23:15:36.037416 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:15:36.039712 [info ] [MainThread]:   sslmode: None
+[0m23:15:36.041669 [info ] [MainThread]:   sslcert: None
+[0m23:15:36.043502 [info ] [MainThread]:   sslkey: None
+[0m23:15:36.045248 [info ] [MainThread]:   sslrootcert: None
+[0m23:15:36.046685 [info ] [MainThread]:   application_name: dbt
+[0m23:15:36.048519 [info ] [MainThread]:   retries: 1
+[0m23:15:36.050402 [info ] [MainThread]: Registered adapter: postgres=1.10.1
+[0m23:15:36.106442 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:15:36.133681 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:15:36.136096 [debug] [MainThread]: On debug: select 1 as id
+[0m23:15:36.138444 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:15:36.161429 [debug] [MainThread]: SQL status: SELECT 1 in 0.023 seconds
+[0m23:15:36.164100 [debug] [MainThread]: On debug: Close
+[0m23:15:36.166877 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:15:36.169198 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:15:36.172373 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </mnt/c/Users/megha/financial-data-pipeline/dbt/dbt_project.yml> not found
+
+[0m23:15:36.178363 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.40714428, "process_in_blocks": "121008", "process_kernel_time": 0.312536, "process_mem_max_rss": "138664", "process_out_blocks": "8", "process_user_time": 1.574704}
+[0m23:15:36.181210 [debug] [MainThread]: Command `dbt debug` failed at 23:15:36.180943 after 0.41 seconds
+[0m23:15:36.183976 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:15:36.186450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bef88a788a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bef88c27d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bef88b0a470>]}
+[0m23:15:36.188965 [debug] [MainThread]: Flushing usage events
+[0m23:15:36.549123 [debug] [MainThread]: An error was encountered while trying to flush usage events

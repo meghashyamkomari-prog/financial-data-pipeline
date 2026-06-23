@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_stock_prices
+    description: Staged stock prices from raw data
+    columns:
+      - name: symbol
+        description: Stock ticker symbol
+        tests:
+          - not_null
+      - name: trade_date
+        description: Trading date
+        tests:
+          - not_null
+      - name: close
+        description: Closing price
+        tests:
+          - not_null

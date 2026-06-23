@@ -7,7 +7,7 @@ from datetime import datetime
 STOCKS = ['AAPL', 'MSFT', 'GOOGL', 'JPM', 'BAC']
 
 # PostgreSQL connection
-DB_URL = DB_URL = DB_URL = "postgresql://postgres:Mad%4012345@localhost:5432/financial_db"
+DB_URL = "postgresql://postgres:Mad%4012345@localhost:5432/financial_db"
 
 def fetch_stock_data():
     all_data = []
